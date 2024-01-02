@@ -1,10 +1,8 @@
 using Godot;
 using System;
 
-public partial class Player : CharacterBody2D
+public partial class Player : Info
 {
-	[Export] float speed { get; set; } = 400;
-
 	public override void _Ready()
 	{
 
