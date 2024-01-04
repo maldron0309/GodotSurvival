@@ -4,9 +4,11 @@
 [ext_resource type="Script" path="res://CS/Gun.cs" id="1_y4knk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f2r24"]
-radius = 645.57
+radius = 410.855
 
 [node name="Gun" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
 script = ExtResource("1_y4knk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -15,7 +17,7 @@ shape = SubResource("CircleShape2D_f2r24")
 [node name="WeaponPivot" type="Marker2D" parent="."]
 
 [node name="Pistol" type="Sprite2D" parent="WeaponPivot"]
-position = Vector2(143, -20)
+position = Vector2(103, -20)
 texture = ExtResource("1_nei8m")
 
 [node name="ShootingPoint" type="Marker2D" parent="WeaponPivot/Pistol"]

@@ -4,9 +4,12 @@
 [ext_resource type="Script" path="res://CS/Mob.cs" id="1_gnriy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jxkiy"]
-radius = 57.0
+radius = 52.0384
 
 [node name="Mob" type="CharacterBody2D"]
+position = Vector2(-10, 11)
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_gnriy")
 
 [node name="Slime" parent="." instance=ExtResource("1_a0855")]

@@ -1,8 +1,7 @@
-
 using Godot;
 using System;
 
-public partial class mob : Info
+public partial class Mob : Info
 {
 Node2D player;
 
@@ -13,14 +12,14 @@ public override void _Ready()
 }
 public override void _PhysicsProcess(double delta)
 {
-   Mob((float)delta);
+   mob((float)delta);
 }
-
+ 
 /// <summary>
 ///  Mob follow player
 /// </summary>
 /// <param name="delta"></param>
-private void Mob(float delta)
+private void mob(float delta)
 {
     float moveAmount = (float)(speed * delta);
    

@@ -44,16 +44,13 @@ position = Vector2(1019, 65)
 
 [node name="Mob" parent="." instance=ExtResource("3_flycu")]
 position = Vector2(39, 371)
-speed = 200.0
 
 [node name="Mob2" parent="." instance=ExtResource("3_flycu")]
 position = Vector2(-346, -306)
-speed = 200.0
+scale = Vector2(0.947269, 1.02109)
 
 [node name="Mob3" parent="." instance=ExtResource("3_flycu")]
 position = Vector2(1353, -342)
-speed = 200.0
 
 [node name="Mob4" parent="." instance=ExtResource("3_flycu")]
 position = Vector2(1434, -93)
-speed = 200.0
