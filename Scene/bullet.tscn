@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b5wtwfqpyxc1t"]
 
-[ext_resource type="Script" path="res://Bullet.cs" id="1_7dwu1"]
+[ext_resource type="Script" path="res://CS/Bullet.cs" id="1_7dwu1"]
 [ext_resource type="Texture2D" uid="uid://dftkbqwsfd68r" path="res://pistol/projectile.png" id="1_o677f"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_05coy"]
@@ -22,3 +22,5 @@ texture = ExtResource("1_o677f")
 position = Vector2(1.01573, -0.62692)
 scale = Vector2(-1.0833, 2.43299)
 shape = SubResource("CircleShape2D_05coy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
