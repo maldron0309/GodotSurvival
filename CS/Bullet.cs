@@ -41,7 +41,7 @@ public partial class Bullet : Area2D
         }
     }
 
-    public void _on_Body_entered(Node body)
+    public void OnBodyentered(Node body)
     {
         QueueFree();
 
